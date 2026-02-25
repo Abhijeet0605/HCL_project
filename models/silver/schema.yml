@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: fact_sales
+    columns:
+      - name: src_hash
+        tests:
+          - unique
+          - not_null
+
+      - name: net_amount
+        tests:
+          - not_null
+
+      - name: sales_ts
+        tests:
+          - not_null
